@@ -53,7 +53,7 @@ link ::File.join(target_dir,"config/config.yml") do
 end
 
 # generate a Procfile with correct paths
-template ::File.join(base_dir, "Procfile") do
+template ::File.join(target_dir, "Procfile") do
   source "Procfile.erb"
   owner user
   mode "0644"
